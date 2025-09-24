@@ -4,12 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página principal</title>
-  <link rel="stylesheet" href="../css/inicio.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/LogoSanLuis.png">
   <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
+
+<div class="search-container">
+    <!-- Botón toggle (ID REQUERIDO) -->
+    <button id="toggleSearchBtn">🔍 Buscar</button>
+    
+    <!-- Cajón desplegable (ID REQUERIDO) -->
+    <div id="searchDrawer">
+        <!-- Barra de búsqueda (ID REQUERIDO) -->
+        <input type="text" id="searchInput" placeholder="Escribe para buscar...">
+
      <?php
   session_start();
   if (isset($_SESSION['mensaje'])) {
@@ -87,6 +98,60 @@
         <br>
 
   </nav>
+
+  <div>
+    <script>
+    // IDs REQUERIDOS:
+    // - toggleSearchBtn (botón)
+    // - searchDrawer (cajón desplegable)
+    // - searchInput (barra de búsqueda)
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById('toggleSearchBtn');
+        const searchDrawer = document.getElementById('searchDrawer');
+        const searchInput = document.getElementById('searchInput');
+
+        // Función toggle para mostrar/ocultar el cajón
+        toggleBtn.addEventListener('click', function() {
+            if (searchDrawer.style.display === 'block') {
+                // Ocultar el cajón
+                searchDrawer.style.display = 'none';
+            } else {
+                // Mostrar el cajón con animación
+                searchDrawer.style.display = 'block';
+                searchDrawer.classList.add('slide-down');
+                
+                // Enfocar la barra de búsqueda automáticamente
+                setTimeout(() => {
+                    searchInput.focus();
+                }, 100);
+            }
+        });
+
+        // Cerrar el cajón si se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+            if (!searchDrawer.contains(event.target) && 
+                event.target !== toggleBtn && 
+                !toggleBtn.contains(event.target)) {
+                searchDrawer.style.display = 'none';
+            }
+        });
+
+        // Prevenir que el clic dentro del cajón lo cierre
+        searchDrawer.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+
+        // Función de búsqueda (ejemplo)
+        searchInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                alert('Buscando: ' + this.value);
+                // Aquí puedes agregar tu lógica de búsqueda
+            }
+        });
+    });
+</script>
+  </div>
 
 </body>
 </html>
