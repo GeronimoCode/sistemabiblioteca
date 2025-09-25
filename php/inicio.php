@@ -2,8 +2,8 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página principal</title>
   <link rel="stylesheet" href="../css/inicio.css">
   <link rel="icon" href="../img/LogoSanLuis.png">
@@ -48,14 +48,17 @@
     </div>
   </header>
   
- <!-- ! NAV -->
+ <!-- //! NAV -->
   <nav class="navbar">
+
     <?php 
           // 👇 Mostrar el nombre del usuario si existe
           if (isset($_SESSION['Nombre'])) {
               echo "<span class='usuario'> 👋 Hola, " . $_SESSION['Nombre'] . "</span>";
           }
         ?>
+
+
    <div class="nav-links">
     <a href="../php/inicio.php"><button class="navbutton">Inicio</button></a>
 
@@ -68,8 +71,9 @@
       </div>
     </div>
 
-    <!-- Dropdown de géneros -->
+    <!-- //! Dropdown de géneros -->
     <div class="dropdown">
+
       <button class="navbutton">Géneros</button>
       <div class="contenido-generos">
        <a href="../php/Narrativo.php"> <button class="sub-button">Narrativo</button></a>
@@ -77,23 +81,38 @@
        <a href="../php/Sociales.php"><button class="sub-button">Ciencias Sociales</button></a>
        <a href="../php/Matematicas.php"><button class="sub-button">Matemática</button></a> 
        <a href="../php/Psicologia.php"><button class="sub-button">Psicología</button></a>
+
       </div>
+
     </div>
 
     <a href="#libro"><button class="navbutton">Libros</button></a>
     <a href="../php/prestamos.php"><button class="navbutton">Prestamos</button></a>
 
 
-      <div class="nav-links">
-        <nav class="navbar">
-          <input type="text" placeholder="Buscar..." class="search-bar" />
-          <!-- <img src="../img/Buscador.png" alt="" class="header-right"> -->
-        </nav>
-        <br>
+    <!--//! BUSCADOR -->
+     <div class="nav-links">
+      <nav class="navbar">
+
+       <form action="../php/buscar.php" method="GET">
+         <input type="text" name="q" placeholder="Buscar..." class="search-bar" />
+         <button type="submit">🔍</button>
+
+        </form>
+
+     </nav>
+    </div>
+
+
+    <br>
+
 
   </nav>
+ <!--//! FIN DEL NAV -->
 
-<!-- ! CARRUSEL -->
+
+
+<!--//! CARRUSEL -->
   <section class="gallery">
        <div class="gallery-container">
             <figure class="gallery-item">
@@ -112,9 +131,11 @@
         </nav>
   </section>
 
+
   <br><br>
 
-  <!-- ! TODOS LOS LIBROS -->
+  
+  <!--//! TODOS LOS LIBROS -->
   <section class="libros" id="libro">
 
     <a href="https://www.cesp.cl/gallery/Cupido-Es-Un-Murcielago-pdf.pdf" target="_blank"><img src="../img/imglibros/narrativo.png" alt="" class="Tlibros"></a>
