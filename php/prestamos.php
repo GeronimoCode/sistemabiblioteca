@@ -65,7 +65,7 @@
       <button class="navbutton">Menú Administrativo</button>
       <div class="menu-admin">
        <a href="../php/MenuAdmin/Inventario.php"> <button class="sub-button">Inventario</button></a>
-       <a href="../php/MenuAdmin/Creargenero.php"><button class="sub-button">Crear Género</button></a>
+       <a href="../php/Creargenero.php"><button class="sub-button">Crear Género</button></a>
        <a href="../php/MenuAdmin/Registrolibros.php"><button class="sub-button">Registro de libros</button></a>
        <a href=""><button class="sub-button">Estudiantes</button></a>
       </div>
