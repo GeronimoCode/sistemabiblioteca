@@ -63,6 +63,7 @@
       <div class="menu-admin">
        <a href="../php/MenuAdmin/Inventario.php"> <button class="sub-button">Inventario</button></a>
        <a href="../php/MenuAdmin/Creargenero.php"><button class="sub-button">Crear Género</button></a>
+       
        <a href=""><button class="sub-button">Estudiantes</button></a>
       </div>
     </div>
@@ -95,5 +96,5 @@
           <input type="text" placeholder="Buscar Libro" class="search-bar" />
         </nav>
     </div>
-    
+
 </html>
