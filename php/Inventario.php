@@ -58,6 +58,7 @@ if (isset($_SESSION['mensaje'])) {
       <div class="menu-admin">
         <a href="./Inventario.php"><button class="sub-button">Inventario</button></a> <!-- mismo nivel -->
         <a href="./Creargenero.php"><button class="sub-button">Crear Género</button></a>
+        <a href="./Registrolibros.php"><button class="sub-button">Registro de libros</button></a>
         <a href="#"><button class="sub-button">Estudiantes</button></a>
       </div>
     </div>
