@@ -17,7 +17,7 @@ function mostrarError($mensaje) {
 function mostrarExito($mensaje) {
     $_SESSION['mensaje'] = $mensaje;
     $_SESSION['tipo'] = 'success';
-    header("Location: ../html/registrarme.php");
+    header("Location: ../html/iniciarSesion.php");
     exit();
 }
 
