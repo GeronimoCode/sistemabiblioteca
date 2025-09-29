@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página principal</title>
-  <link rel="stylesheet" href="../css/inicio.css">
+  <link rel="stylesheet" href="../../css/inicio.css">
   <link rel="icon" href="../img/LogoSanLuis.png">
   <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
