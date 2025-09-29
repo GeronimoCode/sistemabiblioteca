@@ -117,13 +117,19 @@
   <section class="gallery">
        <div class="gallery-container">
             <figure class="gallery-item">
-                <img src="../img/imglibros/narrativo11.png" alt="imagen 1">
+                <img src="../img/imglibros/narrativo16.png" alt="imagen 1">
             </figure>
             <figure class="gallery-item">
                 <img src="../img/imglibros/narrativo3.png" alt="imagen 2">
             </figure>
             <figure class="gallery-item">
                 <img src="../img/imglibros/narrativo9.png" alt="imagen 3">
+            </figure>
+            <figure class="gallery-item">
+                <img src="../img/imglibros/psicologia.png" alt="imagen 4">
+            </figure>
+            <figure class="gallery-item">
+                <img src="../img/imglibros/matematicas2.png" alt="imagen 5">
             </figure>
         </div>
         <nav class="gallery-navigation">
