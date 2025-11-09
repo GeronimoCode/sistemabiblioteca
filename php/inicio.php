@@ -88,20 +88,20 @@
     </div>
 
     <a href="#libro"><button class="navbutton">Libros</button></a>
-    <a href="../php/prestamos.php"><button class="navbutton">Prestamos</button></a>
+    <!-- <a href="../php/prestamos.php"><button class="navbutton">Prestamos</button></a> -->
 
 
     <!--//! BUSCADOR -->
      <div class="nav-links">
-      <nav class="navbar">
+    <nav class="navbar">
 
-       <form action="../php/buscar.php" method="GET">
-         <input type="text" name="q" placeholder="Buscar..." class="search-bar" />
-         <button type="submit">🔍</button>
+      <form action="../php/buscar.php" method="GET">
+        <input type="text" name="consulta" placeholder="Buscar..." class="search-bar" />
+        <button type="submit">🔍</button>
 
-        </form>
+      </form>
 
-     </nav>
+    </nav>
     </div>
 
 
@@ -120,7 +120,7 @@
                 <img src="../img/imglibros/narrativo16.png" alt="imagen 1">
             </figure>
             <figure class="gallery-item">
-                <img src="../img/imglibros/narrativo3.png" alt="imagen 2">
+                <img src="../img/imglibros/psicologia2.png" alt="imagen 2">
             </figure>
             <figure class="gallery-item">
                 <img src="../img/imglibros/narrativo9.png" alt="imagen 3">
@@ -132,10 +132,12 @@
                 <img src="../img/imglibros/matematicas2.png" alt="imagen 5">
             </figure>
         </div>
+
         <nav class="gallery-navigation">
             <button class="nav-button prev-button"><span>&lt;</span></button>
             <button class="nav-button next-button"><span>&gt;</span></button>
         </nav>
+
   </section>
 
 
@@ -145,11 +147,11 @@
   <!--//! TODOS LOS LIBROS -->
   <section class="libros" id="libro">
 
-    <a href="https://www.cesp.cl/gallery/Cupido-Es-Un-Murcielago-pdf.pdf" target="_blank"><img src="../img/imglibros/narrativo.png" alt="" class="Tlibros"></a>
+    <a href="https://www.cesp.cl/gallery/Cupido-Es-Un-Murcielago-pdf.pdf" target="_blank"><img src="../img/imglibros/narrativo.png" alt="Cupido es un murciélago" class="Tlibros">
     <a href="https://es.scribd.com/document/623672496/EL-JARDIN-DE-LA-EMPERATRIZ-CASIA-GABRIELLE-WANG " target="_blank"> <img src="../img/imglibros/narrativo2.png" alt="" class="Tlibros"></a>
     <a href="../img/afrocolombianas.pdf " target="_blank"> <img src="../img/imglibros/narrativo3.png" alt="" class="Tlibros"></a>
     <a href="https://es.scribd.com/document/840311689/Mitos-Griegos-Contados-Otra-Vez " target="_blank"> <img src="../img/imglibros/narrativo4.png" alt="" class="Tlibros"></a>
-   <a href=""> <img src="../img/imglibros/narrativo5.png" alt="" class="Tlibros"></a>
+    <a href=""> <img src="../img/imglibros/narrativo5.png" alt="" class="Tlibros"></a>
     <img src="../img/imglibros/narrativo6.png" alt="" class="Tlibros">
     <img src="../img/imglibros/narrativo7.png" alt="" class="Tlibros">
     <img src="../img/imglibros/narrativo8.png" alt="" class="Tlibros">

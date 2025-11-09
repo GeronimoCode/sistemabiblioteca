@@ -60,7 +60,7 @@
 
 
    <div class="nav-links">
-    <a href="../php/inicio.php"><button class="navbutton">Inicio</button></a>
+    <a href="../../php/inicio.php"><button class="navbutton">Inicio</button></a>
 
     <div class="dropdown">
       <button class="navbutton">Menú Administrativo</button>
